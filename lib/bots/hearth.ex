@@ -46,7 +46,8 @@ defmodule Slacker.Hearth do
     [
       %{
         color: "#d9edf7",
-        pretext: "<#{card["img"]}|#{card["name"]}>",
+        title: "<#{card["img"]}|#{card["name"]}>",
+        text: card["flavor"],
         image_url: card["imgGold"],
         fields: [
           %{ title: "Set", value: card["cardSet"], short: true },
