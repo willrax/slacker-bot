@@ -8,6 +8,8 @@ defmodule Slacker.Hearth do
   def handle_ambient(message, slack) do
     "hearth " <> query = message.text
 
+    indicate_typing(message.channel, slack)
+
     case fetch_card(query) do
       {:error, reason} ->
         send_message(reason, message.channel, slack)
