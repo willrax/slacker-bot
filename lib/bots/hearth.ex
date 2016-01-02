@@ -20,7 +20,7 @@ defmodule Slacker.Hearth do
   end
 
   def fetch_card(query) do
-    url = "https://omgvamp-hearthstone-v1.p.mashape.com/cards/search/#{query}"
+    url = "https://omgvamp-hearthstone-v1.p.mashape.com/cards/#{query}?collectible=1"
     |> URI.encode
 
     header_map = %{"X-Mashape-Key": Application.get_env(:probot, :mashape_key)}
