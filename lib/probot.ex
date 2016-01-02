@@ -1,0 +1,2 @@
+defmodule Slacker do
+end
