@@ -1,19 +1,9 @@
 # Slacker
 
-**TODO: Add description**
+Getting Started
 
-## Installation
-
-If [available in Hex](https://hex.pm/docs/publish), the package can be installed as:
-
-  1. Add probot to your list of dependencies in `mix.exs`:
-
-        def deps do
-          [{:probot, "~> 0.0.1"}]
-        end
-
-  2. Ensure probot is started before your application:
-
-        def application do
-          [applications: [:probot]]
-        end
+```
+git clone git@github.com:willrax/slacker-bot.git
+cd slacker-bot
+mix deps.get
+```
